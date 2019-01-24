@@ -1,0 +1,7 @@
+.authForm {width: 25rem; max-width: 80%; margin: 5rem auto;}
+.authForm .form-control {margin: 0 0 1rem;}
+.authForm .form-control label {margin: 0 0 .5rem;}
+.authForm .form-control label, .authForm .form-control input {display: block; width: 100%;} 
+
+.formActions button {background: #204056; font: inherit; border: 1px solid #a5f0ca; border-radius: 5px; padding: 0.5rem 1rem; margin: 0 1rem 0 0; box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26); color: #fff; cursor: pointer;}
+.formActions button:hover, .formActions button:active, .formActions button:focus {background: #a5f0ca; color: #204056; border: 1px solid #204056;}

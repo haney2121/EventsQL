@@ -1,0 +1,8 @@
+.mainNav {position: fixed; left: 0; top: 0; width: 100%; height: 3.5rem; background: #204056; padding: 0 1rem; display: flex; align-items: center;}
+.mainNavLogo h1 {margin: 0; font-size: 1.5rem; color: #fff;}
+.mainNavItems {margin: 0 0 0 1.5rem; padding: 0;}
+.mainNavItems ul {display: flex; list-style: none; padding: 0; margin: 0;}
+.mainNavItems ul li {margin: 0 1rem;}
+.mainNavItems ul li a {color:#fff; text-decoration: none; }
+.mainNavItems ul li a:hover, .mainNavItems ul li a.active, .mainNavItems ul li a:active, .mainNavItems ul li a:focus {color:#a5f0ca;}
+
