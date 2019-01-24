@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import AuthContext from '../context/auth-context';
 
 import './Auth.css';
 
@@ -6,6 +7,9 @@ class AuthRoute extends Component {
   state = {
     isLogin: true
   }
+
+  static contextType = AuthContext;
+
   constructor(props) {
     super(props);
     this.emailEl = React.createRef();
@@ -62,7 +66,9 @@ class AuthRoute extends Component {
       return res.json();
     })
       .then(resData => {
-        console.log(resData);
+        if (resData.data.login.token) {
+          this.context.login(resData.data.login.token, resData.data.login.userId, resData.data.login.tokenExpiration)
+        }
       })
       .catch(err => {
         console.log(err);
